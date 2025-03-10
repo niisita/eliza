@@ -2,10 +2,14 @@
 
 Plugins (or packages) are modular extensions that enhance the capabilities of ElizaOS agents. They provide a flexible way to add new functionality, integrate external services, and customize agent behavior across different platforms.
 
-> elizaOS maintains an official package registry at [github.com/elizaos-plugins/registry](https://github.com/elizaos-plugins/registry).
+Plugin development on ElizaOS framework is permissionless and scalable. This is done by allowing teams to deploy and maintain Plugins on their own respective GitHub repositories. 
+
+> elizaOS maintains an official package registry at https://elizaos.github.io/registry/
+
+Wondering how to add Plugins to ElizaOS Plugin Registry? 
+To do this, please add an issue to the Plugin repo pointing correctly to your repository, and add a modification to the registry. Once this is done, please submit PR to edit the registry here https://github.com/elizaos-plugins/registry
 
 ---
-
 
 ### Installation
 
@@ -375,6 +379,20 @@ Enable debug logging, use the mock client for isolated testing, and check the ru
 ### What's the difference between Actions and Services?
 
 Actions handle specific agent responses or behaviors, while Services provide ongoing background functionality or external API integrations that multiple actions might use.
+
+### How to add Plugins to ElizaOS Plugin Registry? 
+Once you’ve hosted your plugin in your repo, please add an issue to the Plugin repo pointing correctly to your repository, and add a modification to the registry. Once this is done, please submit PR to edit the registry here https://github.com/elizaos-plugins/registry
+
+### How long does the Plugin Review take? 
+Review is no longer required for Plugins as they are not merged into the main repository. 
+Plugins will be maintained and owned in their respective GitHub repositories. However, if you’d like them to be displayed in ElizaOS Plugin Registry, please submit a PR here https://github.com/elizaos-plugins/registry
+
+### What is the Plugin release procedure? Or Are maintainers able to release a new version of code by themselves? 
+To update your Plugin, please push the updated code to the default branch on your repo. Since this is already pointing to the correct repository on the ElizaOS Plugin Registry, this will always reflect your most updated code. 
+
+### How frequently can the maintainers release a new version? 
+Maintainers can release their own plugin updates as frequently as they’d like. We ask that the updated code be pushed to the default branch on your repo.
+Having a plugin listed in the registry does not require it to be under elizaos-plugins organizations. As part of the current transition state, some plugins are published under the elizaos-plugins organization and some are not. In a future state, only plugins considered “official plugins” will remain in elizaos-plugins. 
 
 ## Additional Resources
 
